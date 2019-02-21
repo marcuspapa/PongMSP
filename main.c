@@ -1,3 +1,11 @@
+/*
+Authors: 
+Eduardo Caliandrini
+Marcus Papa.
+*/
+
+
+
 //adc no p6.1
 
 #include <msp430.h>
@@ -23,12 +31,12 @@ void config_pin_adc(void);                                          //Config P6.
 void config_adc(void);                                              //Config ADC na porta p6.1
 
 void escreve_matriz(char *);                                       //
-void introd(void);                                                 // IntroduÁ„o do Jogo (Escreve Pong na tela)
+void introd(void);                                                 // Introdu√ß√£o do Jogo (Escreve Pong na tela)
 
 char pos_bolinha(unsigned int);                                    //
 
-void display_clear(void);                                          // FunÁ„o que limpa o display (zero em todos leds)
-void display_full(void);                                           // FunÁ„o que liga todos os leds
+void display_clear(void);                                          // Fun√ß√£o que limpa o display (zero em todos leds)
+void display_full(void);                                           // Fun√ß√£o que liga todos os leds
 void game_over(void);                                              // Indica fim do jogo, pisca 3 vezes a tela e reinicia
 
 
@@ -45,13 +53,13 @@ int main(void){
        unsigned int bolinha2_linha = 0;
        unsigned int bolinha2_coluna = 0;
 
-       unsigned int init = 0;                                            //Vari·vel para controlar inÌcio do jogo
+       unsigned int init = 0;                                            //Vari√°vel para controlar in√≠cio do jogo
 
        int vel = 25;                                                     //Indica velocidade do game
 
        int vel_aux = 0;
 
-       int valor_Y = 0;                                                  //vari·vel do adc, mede tens„o analogica
+       int valor_Y = 0;                                                  //vari√°vel do adc, mede tens√£o analogica
 
        int pontos = 0;
        int level = 1;
@@ -150,7 +158,7 @@ int main(void){
                       }
                    }
 
-                   if(bolinha_coluna == 0){  //ver ond fica esse laÁo
+                   if(bolinha_coluna == 0){  //ver ond fica esse la√ßo
                        game_over();
                        dir_coluna = 1;
                        init = 0;
@@ -189,7 +197,7 @@ int main(void){
                         }
                      }
 
-                     if(bolinha2_coluna == 0){  //ver ond fica esse laÁo
+                     if(bolinha2_coluna == 0){  //ver ond fica esse la√ßo
                          game_over();
                          dir2_coluna = 1;
                          init = 0;
