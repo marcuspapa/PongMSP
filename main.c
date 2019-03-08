@@ -158,7 +158,7 @@ int main(void){
                       }
                    }
 
-                   if(bolinha_coluna == 0){  //ver ond fica esse laço
+                   if(bolinha_coluna == 0){  
                        game_over();
                        dir_coluna = 1;
                        init = 0;
@@ -197,7 +197,7 @@ int main(void){
                         }
                      }
 
-                     if(bolinha2_coluna == 0){  //ver ond fica esse laço
+                     if(bolinha2_coluna == 0){  
                          game_over();
                          dir2_coluna = 1;
                          init = 0;
